@@ -23,7 +23,7 @@
      </tr>
      
      <?php
-      $serverName = "https://yungshengtesting.azurewebsites.net";
+      $serverName = "yungshengtesting.database.windows.net";
       $connectionOptions = array(
       "Database" => "yungshengtesting",
       "Uid" => "yungsheng",
