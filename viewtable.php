@@ -23,11 +23,11 @@
      </tr>
      
      <?php
-      $serverName = "simplewebtp000000.database.windows.net";
+      $serverName = "https://yungshengtesting.azurewebsites.net";
       $connectionOptions = array(
-      "Database" => "simpleweb",
-      "Uid" => "simpleweb",
-      "PWD" => "Simple@web");
+      "Database" => "yungshengtesting",
+      "Uid" => "yungsheng",
+      "PWD" => "@Sheng991210");
 
      //Establishes the connection
       $conn = sqlsrv_connect($serverName, $connectionOptions);
@@ -35,7 +35,9 @@
      if (!$conn)
      {
       die("Error connection: ".sqlsrv_errors());
-      }
+     }else{
+      echo "<script>alert('Success!');</script>";
+     }
 
       $tsql= "SELECT * FROM [dbo].[restaurant]";
       $getResults= sqlsrv_query($conn, $tsql);
