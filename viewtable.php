@@ -15,13 +15,6 @@
      <th>Phone</th>
      </tr>
      
-     <tr>
-     <th>0</th>
-     <th>Subway Restaurant</th>
-     <th>Menara Standard Chartered, TPM</th>
-     <th>03-22441234</th>
-     </tr>
-     
      <?php
       $serverName = "yungshengtesting.database.windows.net";
       $connectionOptions = array(
